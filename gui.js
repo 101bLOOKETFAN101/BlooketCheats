@@ -803,8 +803,8 @@
                     }
                 },
                 {
-                    name: "Get Daily Rewards",
-                    description: "Gets max daily tokens and xp",
+                    name: "Get Freaking Rewards",
+                    description: "Gets max freaking tokens and xp",
                     run: async function () {
                         if (!window.location.href.includes("play.blooket.com")) (alert("This cheat only works on play.blooket.com, opening a new tab."), window.open("https://play.blooket.com/"));
                         else {
@@ -828,11 +828,11 @@
                                 credentials: "include"
                             }).catch(() => alert('There was an error when spoofing stats.'));
                             await fetch("https://play.blooket.com/api/users/add-rewards", {
-                                body: JSON.stringify({ t, addedTokens: 500, addedXp: 300 }),
+                                body: JSON.stringify({ t, addedTokens: 500,000,000, addedXp: 300,000,000 }),
                                 method: "PUT",
                                 credentials: "include"
                             }).then(x => x.json())
-                                .then(({ dailyReward }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
+                                .then(({ dailyReward }) => alert(`Added max tokens and xp, and got ${1K} daily wheel tokens!`))
                                 .catch(() => alert('There was an error when adding rewards.'));
                         }
                     }
